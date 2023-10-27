@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css " />
+    <script>
+        function display(){
+            document.getElementById("name").innerHTML = document.getElementById("username").value + "'s Gallery"
+        }
+        function setimage(){
+            document.getElementById("profileimage").style.background = "url(" + document.getElementById("image_url").value + ")"; //url(*ling to your image*)
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div>
+                <div class="flex-item-1">
+                    <div class="avatar" id="profileimage"></div>
+                    <div class="noti"><p>2</p></div>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/chifawaf.chompapef" class="on-hover">
+                    <p style="font-weight: 700;"id="name" >User Name, Gallery</p>
+                </a>
+                </div>
+            </div>
+            <div class="flex-item-2">
+                <div><label>Username</label><input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;" onclick="setimage()">set</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2 / span 2;"><img src="39651725_10156087985569862_7137315900180398080_n.webp" width="610" height="300"/></div>
+            <div class="gallery-item"><img src="large.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="images.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="637077073161353518-story.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="10-coolest-moment-kamen-rider-decade-4.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"style="grid-row: span 2 / span 2;"><img src="131560420.jpg" width="300" height="610"/></div>
+            <div class="gallery-item"><img src="Kamen_Rider_W_title_card.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="745413c71c1ef0b24b7bf3698d2d6307.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="17168e7ce54817dcd27f76872e9e175f.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="Rider-Gaim-1.jpeg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="poster.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="046615.jpg"  width="300" height="300"></div>
+            <div class="gallery-item"><img src="100.jpg"  width="300" height="300"></div>
+        </div>
+    </div>
+</body>
+</html>
